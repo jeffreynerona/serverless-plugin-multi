@@ -1,7 +1,6 @@
 /* eslint-env node, mocha */
 const chai = require('chai');
 const sinon = require('sinon');
-const path = require('path');
 const { getInstalledPathSync } = require('get-installed-path');
 const Multi = require('../index');
 
@@ -42,7 +41,7 @@ describe('Serverless Multi', () => {
   describe('constructor', () => {
     it('returns Multi object with hook `before:package:initialize`', () => {
       plugin = new Multi(serverless);
-      expectedHooks = [
+      const expectedHooks = [
         'multi:add:run',
         'multi:add:symlinks',
         'multi:generate:run',
