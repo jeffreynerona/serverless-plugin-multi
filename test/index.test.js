@@ -106,6 +106,7 @@ describe('Serverless Multi', () => {
     });
 
     context('without options', () => {
+      it('generates serverless config and symlinks for all services');
       it('runs specified command on for all services');
     });
 
