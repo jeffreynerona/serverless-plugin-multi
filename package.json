@@ -31,7 +31,6 @@
     "chai": "^4.1.2",
     "coveralls": "^3.0.0",
     "eslint-config-loanmarket-base": "^1.0.5",
-    "get-installed-path": "^4.0.8",
     "istanbul": "^0.4.5",
     "mocha": "^4.1.0",
     "serverless": "^1.25.0",
@@ -39,6 +38,7 @@
     "sinon-chai": "^2.14.0"
   },
   "dependencies": {
+    "get-installed-path": "^4.0.8",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4"
   }
