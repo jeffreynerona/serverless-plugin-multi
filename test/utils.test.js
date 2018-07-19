@@ -67,14 +67,17 @@ describe('utils', () => {
       serverless.service.functions = {};
     });
 
-    it('returns a resolved promise if service directory is not found', (done) => {
+    it('throws an error if service directory is not found', (done) => {
       const fn = sinon.stub();
       const promise = utils.iterateOverServices(serverless, options, fn);
-      promise.then(() => {
-        expect(fn.notCalled).to.equal(true);
-        done();
-      })
-        .catch(done);
+      promise
+        .then(() => {
+          done(new Error('Should have thrown an errro!'))
+        })
+        .catch((e) => {
+          expect(fn.notCalled).to.equal(true);
+          done()
+        })
     });
 
     context('without any custom options', () => {
