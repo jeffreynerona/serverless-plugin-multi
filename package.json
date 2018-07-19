@@ -38,6 +38,8 @@
     "sinon-chai": "^2.14.0"
   },
   "dependencies": {
+    "ansi-diff": "^1.1.1",
+    "chalk": "^2.4.1",
     "get-installed-path": "^4.0.8",
     "js-yaml": "^3.10.0",
     "lodash": "^4.17.4"

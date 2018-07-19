@@ -20,6 +20,9 @@ class DeployMultiplePlugin {
       service: {
         usage: 'specify which services to target',
       },
+      parallel: {
+        usage: 'run all service commands in parallel',
+      },
     };
     this.commands = {
       multi: {
