@@ -72,12 +72,12 @@ describe('utils', () => {
       const promise = utils.iterateOverServices(serverless, options, fn);
       promise
         .then(() => {
-          done(new Error('Should have thrown an errro!'))
+          done(new Error('Should have thrown an errro!'));
         })
-        .catch((e) => {
+        .catch(() => {
           expect(fn.notCalled).to.equal(true);
-          done()
-        })
+          done();
+        });
     });
 
     context('without any custom options', () => {
