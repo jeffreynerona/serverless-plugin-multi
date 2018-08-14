@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-multi",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A tool to help manage multiple serverless services with ease.",
   "main": "index.js",
   "scripts": {
