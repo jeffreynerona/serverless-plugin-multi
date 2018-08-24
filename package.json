@@ -35,7 +35,8 @@
     "mocha": "^4.1.0",
     "serverless": "^1.25.0",
     "sinon": "^4.1.4",
-    "sinon-chai": "^2.14.0"
+    "sinon-chai": "^2.14.0",
+    "url-parse": "^1.4.3"
   },
   "dependencies": {
     "ansi-diff": "^1.1.1",
